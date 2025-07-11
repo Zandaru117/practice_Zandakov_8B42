@@ -9,6 +9,7 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(1280, 720), L"Пинг Понг"); // окно и ограничение кадров
     window.setFramerateLimit(60);
 
+    /*
     sf::Font font;
     font.loadFromFile("fonts/Monocraft.ttf");
     sf::Text score_text;
@@ -19,7 +20,7 @@ int main() {
     score_text.setPosition(1280/2 - score_text.getLocalBounds().width/2, 20);
     
     int left_score = 0, right_score = 0;
-
+    */
     // мячик и его скорость
     sf::CircleShape ball(15.f);
     ball.setFillColor(sf::Color::White);
@@ -57,12 +58,12 @@ int main() {
         // отскоки
         if (ball.getGlobalBounds().intersects(left_racket.getGlobalBounds())) {
             float hit_position = (ball.getPosition().y - left_racket.getPosition().y) / left_racket.getSize().y;
-            ball_speed.x = fabs(ball_speed.x) * 1.05f; // Гарантируем движение вправо
+            ball_speed.x = fabs(ball_speed.x) * 1.05f;
             ball_speed.y = hit_position * 8.0f;
         }
         else if (ball.getGlobalBounds().intersects(right_racket.getGlobalBounds())) {
             float hit_position = (ball.getPosition().y - right_racket.getPosition().y) / right_racket.getSize().y;
-            ball_speed.x = -fabs(ball_speed.x) * 1.05f; // Гарантируем движение влево
+            ball_speed.x = -fabs(ball_speed.x) * 1.05f;
             ball_speed.y = hit_position * 8.0f;
         }
 
@@ -91,7 +92,7 @@ int main() {
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::L) && right_racket.getPosition().y + left_racket.getSize().y  < 720) {
             right_racket.move(0, racket_speed); // Вниз
         }
-
+        /*
         if (ball.getPosition().x <= 0) {
             right_score++;
             ball.setPosition(640, 360);
@@ -102,16 +103,16 @@ int main() {
             ball.setPosition(640, 360);
             ball_speed.x = -fabs(ball_speed.x); 
         }
-
+        
         // Обновление текста счета
         score_text.setString(std::to_string(left_score) + " : " + std::to_string(right_score));
         score_text.setPosition(1280/2 - score_text.getLocalBounds().width/2, 20);
-
+        */
         window.clear();
         window.draw(ball);
         window.draw(left_racket);
         window.draw(right_racket);
-        window.draw(score_text);
+        //window.draw(score_text);
         window.display();
     }
     return 0;
