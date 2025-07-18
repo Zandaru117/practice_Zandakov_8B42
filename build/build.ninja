@@ -58,6 +58,15 @@ build CMakeFiles/pong.dir/main.cpp.obj: CXX_COMPILER__pong_unscanned_Debug C$:/C
   TARGET_COMPILE_PDB = CMakeFiles\pong.dir\
   TARGET_PDB = pong.pdb
 
+build CMakeFiles/pong.dir/pong.cpp.obj: CXX_COMPILER__pong_unscanned_Debug C$:/C++/practice/practice_course_first/practice_Zandakov_8B42/pong.cpp || cmake_object_order_depends_target_pong
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\pong.dir\pong.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\pong.dir
+  OBJECT_FILE_DIR = CMakeFiles\pong.dir
+  TARGET_COMPILE_PDB = CMakeFiles\pong.dir\
+  TARGET_PDB = pong.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target pong
@@ -66,7 +75,7 @@ build CMakeFiles/pong.dir/main.cpp.obj: CXX_COMPILER__pong_unscanned_Debug C$:/C
 #############################################
 # Link the executable pong.exe
 
-build pong.exe: CXX_EXECUTABLE_LINKER__pong_Debug CMakeFiles/pong.dir/main.cpp.obj | C$:/msys64/mingw64/lib/libsfml-graphics.dll.a C$:/msys64/mingw64/lib/libsfml-window.dll.a C$:/msys64/mingw64/lib/libsfml-system.dll.a
+build pong.exe: CXX_EXECUTABLE_LINKER__pong_Debug CMakeFiles/pong.dir/main.cpp.obj CMakeFiles/pong.dir/pong.cpp.obj | C$:/msys64/mingw64/lib/libsfml-graphics.dll.a C$:/msys64/mingw64/lib/libsfml-window.dll.a C$:/msys64/mingw64/lib/libsfml-system.dll.a
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = C:/msys64/mingw64/lib/libsfml-graphics.dll.a  C:/msys64/mingw64/lib/libsfml-window.dll.a  C:/msys64/mingw64/lib/libsfml-system.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

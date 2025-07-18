@@ -4,5 +4,11 @@
   "command": "C:\\msys64\\mingw64\\bin\\c++.exe -g -o CMakeFiles\\pong.dir\\main.cpp.obj -c C:\\C++\\practice\\practice_course_first\\practice_Zandakov_8B42\\main.cpp",
   "file": "C:\\C++\\practice\\practice_course_first\\practice_Zandakov_8B42\\main.cpp",
   "output": "CMakeFiles\\pong.dir\\main.cpp.obj"
+},
+{
+  "directory": "C:/C++/practice/practice_course_first/practice_Zandakov_8B42/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -g -o CMakeFiles\\pong.dir\\pong.cpp.obj -c C:\\C++\\practice\\practice_course_first\\practice_Zandakov_8B42\\pong.cpp",
+  "file": "C:\\C++\\practice\\practice_course_first\\practice_Zandakov_8B42\\pong.cpp",
+  "output": "CMakeFiles\\pong.dir\\pong.cpp.obj"
 }
 ]

@@ -1,7 +1,6 @@
 # ninja log v7
-39	691	7741960240002120	CMakeFiles/pong.dir/main.cpp.obj	d841aee4bdb3445
-691	816	7741960246516811	pong.exe	c5aafff58a6fe6b9
-37	663	7743592740690866	CMakeFiles/pong.dir/main.cpp.obj	d841aee4bdb3445
-664	798	7743592746955999	pong.exe	c5aafff58a6fe6b9
-36	645	7743593455843811	CMakeFiles/pong.dir/main.cpp.obj	d841aee4bdb3445
-646	745	7743593461877442	pong.exe	c5aafff58a6fe6b9
+8	528	7745174298484320	CMakeFiles/pong.dir/main.cpp.obj	d841aee4bdb3445
+528	638	7745174303706209	pong.exe	e7212440cc777a2d
+13	797	7745161714006420	CMakeFiles/pong.dir/pong.cpp.obj	aa2b059b0310cb0a
+20	528	7745174622020933	CMakeFiles/pong.dir/main.cpp.obj	d841aee4bdb3445
+529	635	7745174627107234	pong.exe	e7212440cc777a2d
