@@ -88,7 +88,6 @@ bool Slider::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
             return true;
         }
         
-        // Клик по треку - перемещение бегунка
         if (track.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y)) {
             float newValue = minValue + (maxValue - minValue) * 
                            ((event.mouseButton.x - track.getPosition().x) / track.getSize().x);
@@ -406,17 +405,17 @@ void handle_game_pve(sf::RenderWindow& window, GameState& currentState,
         float ai_speed = 0.f;
         
         switch (settings.difficulty) {
-            case Difficulty::Easy: reaction_error = 30.f; ai_speed = 5.f; break;
-            case Difficulty::Medium: reaction_error = 15.f; ai_speed = 7.f; break;
-            case Difficulty::Hard: reaction_error = 5.f; ai_speed = 9.f; break;
+            case Difficulty::Easy: reaction_error = 30.f; ai_speed = 3.f; break;
+            case Difficulty::Medium: reaction_error = 15.f; ai_speed = 5.f; break;
+            case Difficulty::Hard: reaction_error = 5.f; ai_speed = 7.f; break;
         }
         
         float targetY = ballCenter + (rand() % (int)reaction_error - reaction_error/2);
         
-        if (paddleCenter < targetY - 10) {
+        if (paddleCenter < targetY - 10 && aiPaddle.getPosition().y + aiPaddle.getSize().y < window.getSize().y) {
             aiPaddle.move(0, ai_speed);
         } 
-        else if (paddleCenter > targetY + 10) {
+        else if (paddleCenter > targetY + 10 && aiPaddle.getPosition().y > 0) {
             aiPaddle.move(0, -ai_speed);
         }
 

@@ -13,7 +13,7 @@ int main() {
 
     GameAudio audio;
     audio.loadSounds();
-    audio.backgroundMusic.play();  // Запускаем музыку один раз при старте
+    audio.backgroundMusic.play(); 
     
     Button playButton("Play", font, sf::Vector2f(540, 250), sf::Color(70, 70, 70), sf::Color::White, sf::Color::White);
     Button settingsButton("Settings", font, sf::Vector2f(540, 350), sf::Color(70, 70, 70), sf::Color::White, sf::Color::White);
