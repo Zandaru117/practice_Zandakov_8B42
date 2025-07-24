@@ -1,35 +1,58 @@
-# practice_Zandakov_8B42
+# Пинг-понг на C++
 
-## Пинг понг на C++
+Полноценный пинг-понг, в котором соблюдены все правила игры, написанные на языке программирования C++ с использованием библиотеки SFML.№№
 
-### Полноценный пинг понг, в котором соблюдены все правила игры, написанные на языке программирования C++ с использованием библиотеки SFML.
+## Возможности
+1. Три игровых режима
+2. Игра против человека или компьютера
+3. Редактор количества очков для победа, скорости мяча и сложности компьютера
+
+## Режимы игры
+1. **Player Vs Player**
+   ```bash
+   Классическая игра человека против человека.
+2. **Player Vs Environment**
+   ```bash
+   Сразитесь против компьютера.
+3. **Team Vs Team**
+   ```bash
+   Позовите друзей и сыграйте в пинг-понг четвером!
 
 
-Программа предназначена для операционной системы Windows;
+Программа предназначена для операционной системы Windows.
+Язык программирования c++, компилятор gcc.
 
-язык программирования c++, компилятор gcc;
+## Установка
 
-# Example headings
+1. **Установите MSYS2 для windows с официального сайта**
+   ```bash
+   https://www.msys2.org
+2. **Откройте в меню "Пуск" MSYS2 MinGW 64-bit**
+3. **При помощи MinGW выполните установку компилятора (gcc), make, cmake и утилит:**
+   ```bash
+   pacman -S --needed base-devel mingw-w64-x86_64-toolchain mingw-w64-x86_64-cmake
+4. **Выполните установку SFML при помощи MinGW**
+   ```bash
+   pacman -S mingw-w64-x86_64-sfml
 
-## Sample Section
+## Сборка
 
-## This'll be a _Helpful_ Section About the Greek Letter Θ!
-A heading containing characters not allowed in fragments, UTF-8 characters, two consecutive spaces between the first and second words, and formatting.
+1. **клонируйте репозиторий**
+   ```bash
+   git clone https://github.com/Zandaru117/practice_Zandakov_8B42.git
+   
+   Важно! В файле pong.cpp нужно указать полный путь, в моем случае это "C:/C++/practice/practice_course_first/practice_Zandakov_8B42/assets/sounds/background.wav".
+2. **Создайте папку build в корне проекта и перейдите в нее:**
+   ```bash
+   mkdir -p build
+   cd build
+3. **Запустите cmake и соберите проект:**
+   ```bash
+   cmake ..
+   cmake --build .
 
-## This heading is not unique in the file
+## Особенности реализации
 
-TEXT 1
-
-## This heading is not unique in the file
-
-TEXT 2
-
-# Links to the example headings above
-
-Link to the sample section: [Link Text](#sample-section).
-
-Link to the helpful section: [Link Text](#thisll-be-a-helpful-section-about-the-greek-letter-Θ).
-
-Link to the first non-unique section: [Link Text](#this-heading-is-not-unique-in-the-file).
-
-Link to the second non-unique section: [Link Text](#this-heading-is-not-unique-in-the-file-1).
+1. Игра происходит в разделе окна (1280x720)
+2. Добавление игры против компьютера, а так же режима команда против команды
+3. Регулировка очков для победы, а так же регулировка начальной скорости мяча
