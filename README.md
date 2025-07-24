@@ -42,7 +42,7 @@
    ```bash
    git clone https://github.com/Zandaru117/practice_Zandakov_8B42.git
    
-Важно! Для того что бы музыка в игре работала, нужно в файле pong.cpp нужно указать полный путь для всей музыки (строки с 8 по 17 включительно), в моем случае это "C:/C++/practice/practice_course_first/practice_Zandakov_8B42/assets/sounds/background.wav" и т.д..
+Важно! Для того что бы музыка в игре работала, нужно в файле pong.cpp указать полный путь для всей музыки (строки с 8 по 17 включительно), в моем случае это "C:/C++/practice/practice_course_first/practice_Zandakov_8B42/assets/sounds/background.wav" и т.д..
 
 2. **Создайте папку build в корне проекта и перейдите в нее:**
    ```bash
