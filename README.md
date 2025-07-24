@@ -43,6 +43,7 @@
    git clone https://github.com/Zandaru117/practice_Zandakov_8B42.git
    
 Важно! В файле pong.cpp нужно указать полный путь, в моем случае это "C:/C++/practice/practice_course_first/practice_Zandakov_8B42/assets/sounds/background.wav".
+
 2. **Создайте папку build в корне проекта и перейдите в нее:**
    ```bash
    mkdir -p build
